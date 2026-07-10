@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petice | Re:FORM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen border-t-4 border-accent">
+
+  <header class="border-b border-zinc-800 bg-brand/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="container-custom h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-display font-bold text-white tracking-tighter">
+        Re:<span class="text-accent">FORM</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="prava-zaku.html" class="nav-link">Práva žáků</a>
+        <a href="eia.html" class="nav-link">Příroda</a>
+        <a href="petice.html" class="nav-link !text-accent">Petice</a>
+        <a href="o-nas.html" class="nav-link">Kdo jsme</a>
+        <a href="kontakt.html" class="btn-primary ml-4 !py-2.5 !px-6 text-xs rounded">HELP!</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-accent">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800 bg-brand p-6 flex flex-col gap-6">
+      <a href="prava-zaku.html" class="text-xl font-display font-bold text-white hover:text-accent">Práva žáků</a>
+      <a href="eia.html" class="text-xl font-display font-bold text-white hover:text-accent">Příroda</a>
+      <a href="petice.html" class="text-xl font-display font-bold text-accent">Petice</a>
+      <a href="o-nas.html" class="text-xl font-display font-bold text-white hover:text-accent">Kdo jsme</a>
+      <a href="kontakt.html" class="btn-primary mt-4 text-center rounded">Potřebuju pomoc</a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <div class="lg:col-span-8">
+            <div class="mb-12">
+              <span class="inline-block px-4 py-1.5 bg-accent text-brand text-xs font-bold uppercase tracking-widest mb-6">Aktivní petice</span>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl uppercase text-white leading-tight mb-8 font-display">
+                Debata o mobilech. <br/><span class="text-accent">Ale s námi.</span>
+              </h1>
+              <p class="text-xl text-zinc-400 font-medium">
+                Vláda a politici řeší plošný zákaz mobilů ve školách. Skvělý. Jenže se ptají všech dospělých, ale nás ne.
+              </p>
+            </div>
+
+            <div class="card mb-8 !bg-transparent border-zinc-800">
+              <h3 class="text-xl text-accent mb-6 uppercase font-display font-bold">O co tu jde:</h3>
+              <ul class="space-y-4 text-zinc-300 font-medium list-disc pl-5">
+                <li>Žáci mají svatý právo vyjádřit se k pravidlům, ve kterých musí denně fungovat.</li>
+                <li>Zákaz nic neřeší. Kyberšikanu jen přesune ze školy domů na odpoledne.</li>
+                <li>Škola má učit digitální gramotnost, ne si hrát na 19. století zákazy technologií.</li>
+                <li>Případná pravidla by si měl určovat ředitel s ohledem na věk, ne plošně z Prahy pro všechny.</li>
+              </ul>
+            </div>
+
+            <div class="card border-white/20 bg-white/5">
+              <h3 class="text-xl text-white mb-6 uppercase font-display font-bold">Požadujeme, aby sněmovna:</h3>
+              <ol class="space-y-4 text-white font-bold list-decimal pl-5">
+                <li>Uspořádala veřejnou a odbornou debatu za účasti samotných studentů a žáků.</li>
+                <li>Předložila tvrdá data a analýzy dopadů dřív, než něco plošně zakáže.</li>
+                <li>Pokud se bude něco regulovat, ať to dává smysl podle věku.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 sticky top-28">
+            <div class="bg-brand-muted border-2 border-accent p-8 rounded-xl text-center shadow-[8px_8px_0px_rgba(204,255,0,0.3)]">
+              <p class="text-6xl font-display text-accent mb-2">847</p>
+              <p class="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-6">Podpisů</p>
+              
+              <div class="w-full bg-zinc-800 h-2 mb-2 rounded-full overflow-hidden">
+                <div class="bg-accent h-2 rounded-full" style="width: 5.6%"></div>
+              </div>
+              <p class="text-xs font-bold text-accent mb-8 uppercase">Cíl: 15 000 podpisů pro slyšení</p>
+
+              <a href="https://portal.gov.cz/e-petice/1605-petice-za-zapojeni-zaku-do-debaty-o-regulaci-mobilnich-telefonu-ve-skolach" target="_blank" class="btn-primary w-full block mb-4 !px-4 text-xs">
+                Podepsat online přes portál
+              </a>
+              <p class="text-xs text-zinc-500 font-medium">Je to ofiko přes bankovní identitu, takže to má váhu a nikdo to nesmete ze stolu.</p>
+              
+              <div class="mt-8 pt-8 border-t border-zinc-800 text-left space-y-3 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-zinc-500 font-medium">Petiční výbor:</span>
+                  <span class="text-white font-bold">Re:FORM z.s.</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-zinc-500 font-medium">Věk pro podpis:</span>
+                  <span class="text-accent font-bold">Bez omezení</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand border-t border-zinc-800 py-12 mt-auto">
+    <div class="container-custom text-xs font-medium text-zinc-600 uppercase tracking-widest">
+      <p>&copy; 2026 Re:FORM z.s.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

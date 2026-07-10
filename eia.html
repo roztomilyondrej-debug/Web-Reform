@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EIA Řízení | Re:FORM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen border-t-4 border-accent">
+
+  <header class="border-b border-zinc-800 bg-brand/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="container-custom h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-display font-bold text-white tracking-tighter">
+        Re:<span class="text-accent">FORM</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="prava-zaku.html" class="nav-link">Práva žáků</a>
+        <a href="eia.html" class="nav-link !text-accent">Příroda</a>
+        <a href="petice.html" class="nav-link">Petice</a>
+        <a href="o-nas.html" class="nav-link">Kdo jsme</a>
+        <a href="kontakt.html" class="btn-primary ml-4 !py-2.5 !px-6 text-xs rounded">HELP!</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-accent">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800 bg-brand p-6 flex flex-col gap-6">
+      <a href="prava-zaku.html" class="text-xl font-display font-bold text-white hover:text-accent">Práva žáků</a>
+      <a href="eia.html" class="text-xl font-display font-bold text-accent">Příroda</a>
+      <a href="petice.html" class="text-xl font-display font-bold text-white hover:text-accent">Petice</a>
+      <a href="o-nas.html" class="text-xl font-display font-bold text-white hover:text-accent">Kdo jsme</a>
+      <a href="kontakt.html" class="btn-primary mt-4 text-center rounded">Potřebuju pomoc</a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="section-padding bg-brand-muted border-b border-zinc-800">
+      <div class="container-custom">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold tracking-widest text-accent uppercase mb-6 flex items-center gap-2">
+            <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+            EIA & Životní prostředí
+          </p>
+          <h1 class="text-5xl md:text-7xl leading-tight mb-8 uppercase text-white">
+            Nenecháme je zničit <br/>náš prostor.
+          </h1>
+          <p class="text-lg text-zinc-400 mb-0 font-medium">
+            Čteme ty nekonečně dlouhé dokumenty za vás. Vstupujeme do úředních řízení a podáváme námitky proti projektům, které by zničily krajinu nebo zhoršily ovzduší.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+          <div class="md:col-span-7">
+            <h2 class="text-3xl md:text-4xl mb-8 uppercase text-white">Co to sakra <span class="text-accent">je EIA?</span></h2>
+            <div class="space-y-6 text-zinc-400 font-medium">
+              <p>
+                EIA (Environmental Impact Assessment) je zákonný proces, který úředně vyhodnocuje, jak moc plánovaná továrna, těžba, dálnice nebo megasklad ublíží životnímu prostředí.
+              </p>
+              <p>
+                Developer si zaplatí posudek, úředník na to koukne a lidé se často vůbec nedozví, že mají právo do toho mluvit. Dokumentace mají stovky stran, jsou plné odborného bullshit lingo, které má lidi odradit.
+              </p>
+              <p class="text-white font-bold text-lg">
+                Proto jsme tu my.
+              </p>
+              <p>
+                My se tou nudou prokoušeme. Najdeme nesrovnalosti, lži nebo chybějící data o hluku a emisích. Pak podáme jako zapsaný spolek oficiální, tvrdé a právně neprůstřelné stanovisko.
+              </p>
+            </div>
+          </div>
+          
+          <div class="md:col-span-5">
+            <div class="card border-accent bg-accent/5 shadow-[8px_8px_0px_rgba(204,255,0,0.2)]">
+              <h3 class="text-2xl text-white mb-4 uppercase font-display font-bold">Staví ti za barákem nesmysl?</h3>
+              <p class="text-sm text-zinc-400 mb-8 font-medium">
+                Dozvěděl ses o spalovně, hale nebo těžbě? Bojíš se, že to projde potichu? Napiš nám. Umíme udělat hluk a hodit úředníkům legální vidle do projektu.
+              </p>
+              <a href="kontakt.html" class="btn-primary w-full text-center">Napiš nám o tom</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand border-t border-zinc-800 py-12 mt-auto">
+    <div class="container-custom flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-zinc-600 uppercase tracking-widest">
+      <p>&copy; 2026 Re:FORM z.s.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

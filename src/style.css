@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  
+  --color-brand: #09090b; /* zinc-950 */
+  --color-brand-muted: #18181b; /* zinc-900 */
+  --color-accent: #ccff00; /* Neon Lime */
+  --color-accent-hover: #b3e600;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-zinc-300 bg-brand antialiased leading-relaxed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold text-white tracking-tight;
+  }
+  
+  ::selection {
+    @apply bg-accent text-brand;
+  }
+}
+
+@layer utilities {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-6 md:px-12;
+  }
+  
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-accent text-brand font-bold text-sm uppercase tracking-wider hover:bg-accent-hover transition-all rounded-sm hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(204,255,0,0.3)];
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold text-sm uppercase tracking-wider border-2 border-zinc-700 hover:border-accent hover:text-accent transition-all rounded-sm hover:-translate-y-1;
+  }
+  
+  .card {
+    @apply bg-brand-muted border border-zinc-800 p-8 hover:border-zinc-700 transition-colors rounded-xl relative overflow-hidden;
+  }
+
+  .nav-link {
+    @apply text-sm font-bold uppercase tracking-wider text-zinc-400 hover:text-accent transition-colors;
+  }
+}

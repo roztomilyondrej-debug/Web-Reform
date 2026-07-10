@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kdo jsme | Re:FORM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex flex-col min-h-screen border-t-4 border-accent">
+
+  <header class="border-b border-zinc-800 bg-brand/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="container-custom h-20 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-display font-bold text-white tracking-tighter">
+        Re:<span class="text-accent">FORM</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="prava-zaku.html" class="nav-link">Práva žáků</a>
+        <a href="eia.html" class="nav-link">Příroda</a>
+        <a href="petice.html" class="nav-link">Petice</a>
+        <a href="o-nas.html" class="nav-link !text-accent">Kdo jsme</a>
+        <a href="kontakt.html" class="btn-primary ml-4 !py-2.5 !px-6 text-xs rounded">HELP!</a>
+      </nav>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-accent">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800 bg-brand p-6 flex flex-col gap-6">
+      <a href="prava-zaku.html" class="text-xl font-display font-bold text-white hover:text-accent">Práva žáků</a>
+      <a href="eia.html" class="text-xl font-display font-bold text-white hover:text-accent">Příroda</a>
+      <a href="petice.html" class="text-xl font-display font-bold text-white hover:text-accent">Petice</a>
+      <a href="o-nas.html" class="text-xl font-display font-bold text-accent">Kdo jsme</a>
+      <a href="kontakt.html" class="btn-primary mt-4 text-center rounded">Potřebuju pomoc</a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section class="section-padding bg-brand-muted border-b border-zinc-800">
+      <div class="container-custom">
+        <div class="max-w-3xl">
+          <p class="text-xs font-bold tracking-widest text-accent uppercase mb-6 flex items-center gap-2">
+            <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+            Organizace
+          </p>
+          <h1 class="text-5xl md:text-7xl leading-tight mb-8 uppercase text-white">
+            Žádný kecy. <br/>Právní síla.
+          </h1>
+          <p class="text-lg text-zinc-400 mb-0 font-medium">
+            Re:FORM vznikl z nasranosti na systém, ve kterým se s mladými zachází jako s hadrem. Nejsme jen parta co křičí na náměstí. Jsme oficiální spolek, bojujeme zákony, argumenty a daty.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div>
+            <h2 class="text-3xl font-display mb-8 uppercase text-white">Údaje</h2>
+            <div class="space-y-6">
+              <div class="card p-6 !bg-brand">
+                <p class="text-accent font-bold uppercase tracking-widest text-xs mb-2">Oficiální název</p>
+                <p class="text-white font-medium">Re:FORM – občanská a studentská iniciativa, z. s.</p>
+              </div>
+              <div class="card p-6 !bg-brand">
+                <p class="text-accent font-bold uppercase tracking-widest text-xs mb-2">IČ</p>
+                <p class="text-white font-medium">24457752</p>
+              </div>
+              <div class="card p-6 !bg-brand">
+                <p class="text-accent font-bold uppercase tracking-widest text-xs mb-2">Sídlo</p>
+                <p class="text-white font-medium">Bezručova 4201, 430 03 Chomutov</p>
+              </div>
+              <div class="card p-6 !bg-brand">
+                <p class="text-accent font-bold uppercase tracking-widest text-xs mb-2">Datovka</p>
+                <p class="text-white font-medium">xx4qgyz</p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h2 class="text-3xl font-display mb-8 uppercase text-white">Naše DNA</h2>
+            <div class="space-y-8">
+              <div>
+                <h4 class="text-xl text-accent font-bold uppercase mb-2">No Bullshit</h4>
+                <p class="text-sm text-zinc-400 font-medium">Nepíšeme zbytečný papíry. Řešíme věci tvrdě, na rovinu a věcně. Jednáme podle zákonů, abychom systém porazili jeho vlastními zbraněmi.</p>
+              </div>
+              <div>
+                <h4 class="text-xl text-accent font-bold uppercase mb-2">Zadarmo. Vždy.</h4>
+                <p class="text-sm text-zinc-400 font-medium">Právo bránit se nesmí být výsadou bohatých. Pomáháme žákům zdarma. Pro bono publico.</p>
+              </div>
+              <div>
+                <h4 class="text-xl text-accent font-bold uppercase mb-2">Nulová tolerance křivdy</h4>
+                <p class="text-sm text-zinc-400 font-medium">Učitel se vozí po žákovi? Developer kácí les načerno? Jdeme po nich.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand border-t border-zinc-800 py-12 mt-auto">
+    <div class="container-custom flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-zinc-600 uppercase tracking-widest">
+      <p>&copy; 2026 Re:FORM z.s.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

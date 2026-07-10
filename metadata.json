@@ -1,0 +1,6 @@
+{
+  "name": "Re:FORM",
+  "description": "Moderní a profesionální redesign občanské a studentské iniciativy Re:FORM. Hájíme práva žáků, životní prostředí a organizujeme petice.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
